@@ -1,0 +1,19 @@
+Design Explanation
+==================
+
+I chose to use an array to hold the possible integer solutions because working
+on the indices to split the structure in halves seemed like the most elegant
+way to go about it.
+
+Space Efficiency
+================
+
+O(n)    because there is the original list of n elements, and then we create new lists
+        with each layer of recursion. The infinite series 1/2 + 1/4 + 1/8 + ... reduces to 1,
+        so we end up with O(2n) which can reduce to O(n)
+
+Time Efficiency
+===============
+
+O(log n)    because every operation within the functions take constant time, but we will recur
+            log n times, because we are halving the total size with each recurrence.

@@ -1,0 +1,19 @@
+Design Explanation
+==================
+
+Similarly to P1, I chose an array because the indices make it easier to find a midpoint,
+and to split the array as we recur.
+
+Space Efficiency
+================
+
+O(n):   Contrary to P1, we are not creating new lists, but we are operating on the indices,
+        which means that we are only using the original list at O(n)
+
+Time Efficiency
+===============
+
+O(log n):   Just like in P1, everytime we recur, the size of the array that we are looking at
+            shrinks in half. Therefore, in the worst case, assuming we guess wrong until we are looking
+            at only one element, we will be running at O(log n)
+

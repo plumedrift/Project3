@@ -1,0 +1,16 @@
+Design Explanation
+==================
+
+There were no additional structures needed. Decided to simply track the current min and max
+as I traversed the input-list.
+
+Space Efficiency
+================
+
+O(n):   No additional space needed, just the original list.
+
+Time Efficiency
+===============
+
+O(n):   With a single traversal, and only constant-time operations in that loop,
+        the time complexity is O(n)

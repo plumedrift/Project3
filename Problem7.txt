@@ -1,0 +1,20 @@
+Design Explanation
+==================
+
+I chose to add the Home Page handler when my program initializes the RouteTrie because I thought
+that would be useful. I also decided to implement the 'not found handler' as well as the trailing slashes
+scenario.
+
+Space Efficiency
+================
+
+O(n)    where n is the number of unique words between '/'s that have been inserted into the trie.
+        Just like in P5, each level of the trie is distinct, so a first-level node will be different from a second-level
+        node, even if the words are the same.
+
+Time Efficiency
+===============
+
+O(n) for both find() and insert() functions. They both iterate similarly through the levels of the trie,
+        and will not go deeper than the number of words separated by slashes. This is n, which will be bounded
+        by the height of the trie.

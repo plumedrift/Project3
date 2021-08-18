@@ -1,0 +1,18 @@
+Design Explanation
+==================
+
+I decided to create a max-heap since I realized that I would need to use an O(n log n)
+sorting algorithm, as well as I would need to pop the largest element off as I created
+both numbers. Heapsort seemed like an efficient way to go, with it being an in-place
+sort, and the required time efficiency.
+
+Space Efficiency
+================
+
+O(n):   Since we are sorting in place, we only need the size of the original list.
+
+Time Efficiency
+===============
+
+O(n log n):     Heapsort's run-time complexity is well-documented and in addition to this,
+                we are only adding a create_numbers function which runs at O(n).

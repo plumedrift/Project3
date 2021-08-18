@@ -1,0 +1,18 @@
+Design Explanation
+==================
+
+I thought it best to use the input array and to sort in place, fulfilling the
+requirement of a single traversal.
+
+Space Efficiency
+================
+
+O(n):   where n is the number of elements in the input_list. This is due to us
+        sorting in place.
+
+Time Efficiency
+===============
+
+O(n):   In the worst case, there are no 2s and we have to go to the very end of the input_list.
+        This makes the while loop iterate n times, resulting in O(n) since all the other operations
+        are constant-time.

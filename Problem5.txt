@@ -1,0 +1,21 @@
+Design Explanation
+==================
+
+The only design choices really to speak of here are choosing to write an iterative function
+for both insert() and find(), while using recursion for suffixes(). I did this both because
+it seemed more intuitive and based on the hint saying to use recursion.
+
+Space Efficiency
+================
+
+O(n):   where n is the sum total of unique first digits across all words inserted to the trie,
+        unique second digits, third digits, etc. There are also lists created in order to catch all
+        of the suffixes below a prefix node. This will occupy space equal to the number of characters
+        across all suffixes found, and there will be a list of size equal to the number of suffixes found.
+
+Time Efficiency
+===============
+
+Insert -    O(n) where n is the number of characters in the word.
+Find -      O(n) where n is the number of characters in the word.
+Suffixes -  O(n) where n is the number of nodes below the prefix node.
