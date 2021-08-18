@@ -7,8 +7,8 @@ requirement of a single traversal.
 Space Efficiency
 ================
 
-O(n):   where n is the number of elements in the input_list. This is due to us
-        sorting in place.
+**O(1)**:   Because there are only 3 variables that will be created, regardless of input size,
+            we can say that the space complexity is constant-time.
 
 Time Efficiency
 ===============

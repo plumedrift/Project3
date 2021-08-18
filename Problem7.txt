@@ -8,13 +8,13 @@ scenario.
 Space Efficiency
 ================
 
-O(n)    where n is the number of unique words between '/'s that have been inserted into the trie.
-        Just like in P5, each level of the trie is distinct, so a first-level node will be different from a second-level
-        node, even if the words are the same.
+**O(1)**    find() creates no additional structures
+**O(n)**    insert() can create up to n additional TrieNodes, if they are all unique (they don't
+            already exist in the Trie).
 
 Time Efficiency
 ===============
 
 O(n) for both find() and insert() functions. They both iterate similarly through the levels of the trie,
-        and will not go deeper than the number of words separated by slashes. This is n, which will be bounded
+        and cannot go deeper than the number of words separated by slashes. This is n, which will be bounded
         by the height of the trie.

@@ -7,8 +7,8 @@ and to split the array as we recur.
 Space Efficiency
 ================
 
-O(n):   Contrary to P1, we are not creating new lists, but we are operating on the indices,
-        which means that we are only using the original list at O(n)
+*O(log n)*:   In the worst case, the call stack will reach log n levels deep as we recur, missing the target
+              until finally we are down to one or two elements left in visible range.
 
 Time Efficiency
 ===============

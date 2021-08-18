@@ -8,10 +8,12 @@ it seemed more intuitive and based on the hint saying to use recursion.
 Space Efficiency
 ================
 
-O(n):   where n is the sum total of unique first digits across all words inserted to the trie,
-        unique second digits, third digits, etc. There are also lists created in order to catch all
-        of the suffixes below a prefix node. This will occupy space equal to the number of characters
-        across all suffixes found, and there will be a list of size equal to the number of suffixes found.
+**O(n)**:   find() creates no additional structures, so it will occupy O(1) space.
+
+            in the worst case, insert() will create n additional TrieNodes, occupying O(n) space.
+
+            in the same worst case, calling suffixes on the root node, will grow the implicit stack
+            to a size of O(n) as we recur to the leaf-most node.
 
 Time Efficiency
 ===============

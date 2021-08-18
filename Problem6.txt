@@ -7,7 +7,8 @@ as I traversed the input-list.
 Space Efficiency
 ================
 
-O(n):   No additional space needed, just the original list.
+**O(1)**:   No additional space needed, just the original list plus 3 variables (a fixed amount
+                regardless of input size)
 
 Time Efficiency
 ===============
