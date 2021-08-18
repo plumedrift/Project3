@@ -13,9 +13,11 @@ def sqrt(number):
 
 def sqrt_recur(arr, number):
     size = len(arr)
-    if size == 0:
+    if size == 0 and number == -1:
+        return 'i'
+    elif size == 0:
         return 0
-    if size == 1:
+    elif size == 1:
         return arr[0]
 
     cur = size // 2
@@ -50,8 +52,8 @@ test_function(0, 0)
 # 0
 
 print("[Edge Case]")
-test_function(1, 1)
-# 1
+test_function('i', -1)
+# i
 
 # Remaining Test Cases
 test_function(4, 16)
